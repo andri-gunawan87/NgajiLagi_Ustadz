@@ -16,8 +16,48 @@
                 TextColor="#88984A"
                 Margin="0,165, 0, 40"
                 HorizontalOptions="Center" />
+
+            <Label 
+                Text="&quot;Bacalah Al Qur'an, karena ia akan datang pada hari kiamat sebagai syafa'at bagi shahibul Qur'an&quot; "
+                FontSize="18"
+                Margin="28, 0, 28, 40"
+                HorizontalTextAlignment="Center"/>
+
+            <Entry 
+                x:Name = "Username"
+                Margin="28, 0, 28, 12"
+                Placeholder="email..."
+                FontFamily="Baloo"/>
             
-            <Image
+            <Entry 
+                x:Name = "Password"
+                Margin="28, 0, 28, 60"
+                Placeholder="password..."
+                IsPassword="True"
+                FontFamily="Baloo"/>
+
+            <Button 
+                x:Name="login"
+                Text="Masuk"
+                Margin="28, 0, 28, 16"
+                Padding="0, 21"
+                WidthRequest="315"
+                FontSize="16"
+                CornerRadius="32"
+                Clicked="Login_Clicked"
+                HorizontalOptions="Center" />
+            
+            <Button 
+                x:Name="forgotPassword"
+                Text="Lupa Password ?"
+                Margin="28, 0, 28, 20"
+                FontSize="14"
+                TextColor="Black"
+                BorderColor="White"
+                BackgroundColor="Transparent"
+                HorizontalOptions="Center" />
+
+            <!--<Image
                 Source="dotnet_bot.png"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="200"
@@ -41,7 +81,7 @@
                 Text="Click me"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center" />-->
 
         </VerticalStackLayout>
     </ScrollView>

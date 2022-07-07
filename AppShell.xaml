@@ -10,12 +10,4 @@
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
-    <TabBar>
-        <ShellContent Title="Cats"
-                     ContentTemplate="{DataTemplate local:MainPage}" />
-        <ShellContent Title="Dogs"
-                     ContentTemplate="{DataTemplate local:MainPage}" />
-        <ShellContent Title="Monkeys"
-                     ContentTemplate="{DataTemplate local:MainPage}" />
-    </TabBar>
 </Shell>

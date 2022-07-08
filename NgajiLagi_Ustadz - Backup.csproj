@@ -40,7 +40,6 @@
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
 		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
-		<MauiImage Update="Resources\Images\arrow_right.svg" />
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -50,33 +49,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <AndroidResource Remove="Resources\Images\Onboarding\**" />
-	  <Compile Remove="Resources\Images\Onboarding\**" />
-	  <EmbeddedResource Remove="Resources\Images\Onboarding\**" />
-	  <MauiCss Remove="Resources\Images\Onboarding\**" />
-	  <MauiImage Remove="Resources\Images\Onboarding\**" />
-	  <MauiXaml Remove="Resources\Images\Onboarding\**" />
-	  <None Remove="Resources\Images\Onboarding\**" />
+	  <None Remove="Resources\Images\Onboarding\OnBoarding1.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\onboarding_1.svg" />
+	  <MauiImage Include="Resources\Images\Onboarding\OnBoarding1.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="View\Onboarding\Onboarding2.xaml.cs">
-	    <DependentUpon>OnBoarding2.xaml</DependentUpon>
-	  </Compile>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiXaml Update="View\Onboarding\OnBoarding1.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="View\Onboarding\OnBoarding2.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="View\Onboarding\OnBoarding3.xaml">
+	  <MauiXaml Update="View\OnBoarding1.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

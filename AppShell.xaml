@@ -3,11 +3,14 @@
     x:Class="NgajiLagi_Ustadz.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:NgajiLagi_Ustadz"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:local="clr-namespace:NgajiLagi_Ustadz.View"
+    Shell.FlyoutBehavior="Disabled"
+    >
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        ContentTemplate="{DataTemplate local:OnBoarding1}"
+        Route="OnBoarding1"
+        />
+    
 </Shell>

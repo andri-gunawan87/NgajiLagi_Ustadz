@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NgajiLagi_Ustadz.View.OnBoarding1"
+             Title="OnBoarding1"
+             Shell.NavBarIsVisible="false">
+    <VerticalStackLayout
+        BackgroundColor="#88984A"
+        VerticalOptions="Center">
+        <Image
+            Source="onboarding_one.png"
+            SemanticProperties.Description="Cute dot net bot waving hi to you!"
+            HeightRequest="376"
+            HorizontalOptions="Center" />
+
+        <Label 
+            Text="Bisa Belajar Gratis di NgajiLagiBase"
+            FontSize="32"
+            HorizontalTextAlignment="Center"
+            FontAttributes="Bold"
+            TextColor="White"
+            FontAutoScalingEnabled="False"
+            Margin="28, 0, 28, 20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        
+        <Label 
+            Text="It looks like you are on track. Please continue to follow your daily plan"
+            FontSize="16"
+            HorizontalTextAlignment="Center"
+            TextColor="White"
+            Margin="28, 0, 28, 134"
+            FontAutoScalingEnabled="False"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Button
+            BackgroundColor="Yellow"
+            TextColor="Black"
+            x:Name="Next"
+            Margin="28, 0, 28, 34"
+            Padding="0, 21"
+            WidthRequest="320"
+            FontSize="20"
+            CornerRadius="32"
+            Clicked="Next_Clicked"
+            HorizontalOptions="Center"
+            Text="Next"
+            >
+        </Button>
+    </VerticalStackLayout>
+</ContentPage>

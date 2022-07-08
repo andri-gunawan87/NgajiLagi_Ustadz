@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NgajiLagi_Ustadz.View.OnBoarding3"
+             Title="OnBoarding3"
+             Shell.NavBarIsVisible="false">
+    <VerticalStackLayout
+        BackgroundColor="#88984A"
+        VerticalOptions="Center">
+        <Image
+            Source="onboarding_three.png"
+            SemanticProperties.Description="Cute dot net bot waving hi to you!"
+            HeightRequest="376"
+            HorizontalOptions="Center" />
+
+        <Label 
+            Text="Kuy Mulai Mengaji!"
+            FontSize="32"
+            HorizontalTextAlignment="Center"
+            FontAttributes="Bold"
+            TextColor="White"
+            FontAutoScalingEnabled="False"
+            Margin="28, 0, 28, 20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label 
+            Text="It looks like you are on track. Please continue to follow your daily plan"
+            FontSize="16"
+            HorizontalTextAlignment="Center"
+            TextColor="White"
+            Margin="28, 0, 28, 134"
+            FontAutoScalingEnabled="False"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <HorizontalStackLayout
+            HorizontalOptions="Center"
+            >
+            <Button
+                ImageSource="arrow_left.png"
+                BackgroundColor="White"
+                WidthRequest="58"
+                HeightRequest="58"
+                CornerRadius="32"
+                VerticalOptions="Center"
+                Margin="28, 0, 0, 34"
+                Padding="10, 22, 0, 22"
+                Clicked="Previous_Clicked"
+                >
+            </Button>
+
+            <Button
+                BackgroundColor="Yellow"
+                TextColor="Black"
+                x:Name="Next"
+                Margin="28, 0, 28, 34"
+                Padding="0, 21"
+                WidthRequest="248"
+                FontSize="20"
+                CornerRadius="32"
+                Clicked="Next_Clicked"
+                HorizontalOptions="Center"
+                Text="Next"
+                >
+            </Button>
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

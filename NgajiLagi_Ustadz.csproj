@@ -39,6 +39,7 @@
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
+		<MauiImage Include="Resources\Images\Navbar\*" />
 		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
 		<MauiImage Update="Resources\Images\arrow_right.svg" />
 
@@ -70,6 +71,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="View\Menu\Dashboard.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\Menu\Notification.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\Menu\Setting.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="View\Onboarding\OnBoarding1.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -83,6 +93,10 @@
 
 	<ItemGroup>
 	  <None Update="Resources\AppIcon\appiconfg.svg" Color="White" Resize="false" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Resources\Images\Navbar\" />
 	</ItemGroup>
 
 </Project>

@@ -4,13 +4,29 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:NgajiLagi_Ustadz.View"
-    Shell.FlyoutBehavior="Disabled"
+    xmlns:views="clr-namespace:NgajiLagi_Ustadz.View.Menu"
     >
-
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:OnBoarding1}"
-        Route="OnBoarding1"
-        />
+    <TabBar>
+        <Tab Title="Home"
+             Icon="home.png">
+            <ShellContent ContentTemplate="{DataTemplate views:Dashboard}" />
+        </Tab>
+        <Tab Title="Book"
+             Icon="book.png">
+            <ShellContent ContentTemplate="{DataTemplate views:Dashboard}" />
+        </Tab>
+        <Tab Title="Notification"
+             Icon="notification.png">
+            <ShellContent ContentTemplate="{DataTemplate views:Notification}" />
+        </Tab>
+        <Tab Title="Message"
+             Icon="message.png">
+            <ShellContent ContentTemplate="{DataTemplate views:Dashboard}" />
+        </Tab>
+        <Tab Title="Setting"
+             Icon="setting.png">
+            <ShellContent ContentTemplate="{DataTemplate views:Setting}" />
+        </Tab>
+    </TabBar>
     
 </Shell>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NgajiLagi_Ustadz.View.Menu.Notification"
+             Title="Notification"
+             Shell.NavBarIsVisible="false">
+    <StackLayout>
+        <Label Text="Welcome to .NET MAUI!"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+        <Image
+            Source="notification_empty.png"
+            SemanticProperties.Description="Blank notification"
+            HeightRequest="284"
+            HorizontalOptions="Center" />
+    </StackLayout>
+</ContentPage>

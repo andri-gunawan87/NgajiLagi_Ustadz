@@ -1,4 +1,6 @@
-﻿namespace NgajiLagi_Ustadz;
+﻿using NgajiLagi_Ustadz.View.Menu;
+
+namespace NgajiLagi_Ustadz;
 
 public partial class MainPage : ContentPage
 {
@@ -11,7 +13,7 @@ public partial class MainPage : ContentPage
 
     private void Login_Clicked(object sender, EventArgs e)
     {
-        Shell.Current.GoToAsync("OnBoarding1");
+        Shell.Current.GoToAsync("Dashboard");
     }
 }
 
